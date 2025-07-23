@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>Titre défilant</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+.bounce {
+  display: inline-block;
+  font-size: 2em;
+  animation: bounce 1s infinite;
+  color: #2c3e50;
+  font-family: sans-serif;
+}
 
-  <div class="marquee">
-    <h1>Voici un titre qui défile de droite à gauche !</h1>
-  </div>
-
-</body>
-</html>
+/* Animation rebond */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateY(-20px);
+    animation-timing-function: ease-out;
+  }
+}
