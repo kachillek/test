@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Titre défilant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="marquee">
+    <h1>Voici un titre qui défile de droite à gauche !</h1>
+  </div>
+
+</body>
+</html>
