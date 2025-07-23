@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Titre défilant</title>
+    <style>
+      .marquee {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        box-sizing: border-box;
+      }
+
+      .marquee h1 {
+        display: inline-block;
+        padding-left: 100%;
+        animation: defilement 10s linear infinite;
+      }
+
+      @keyframes defilement {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee">
+      <h1>Voici un titre qui défile de droite à gauche !</h1>
+    </div>
+  </body>
+</html>
